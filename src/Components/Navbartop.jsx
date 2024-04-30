@@ -29,13 +29,13 @@ export default function Navbartop() {
 
           <Nav className="me-auto">
             <Link className="nav-link" to="/">
-              Homepage
-            </Link>
-            <Link className="nav-link" to="/category">
-              Categorie
+              Home
             </Link>
             <Link className="nav-link" to="/allUsers">
-              Utenti
+              Users
+            </Link>
+            <Link className="nav-link" to="/category">
+              Categories
             </Link>
           </Nav>
 
