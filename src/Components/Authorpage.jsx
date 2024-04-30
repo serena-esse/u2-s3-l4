@@ -6,7 +6,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Spinner from "react-bootstrap/esm/Spinner";
 import { Row, Col } from "react-bootstrap";
-import ListGroup from "react-bootstrap/ListGroup";
 
 export default function Authorpage() {
   const { id } = useParams();

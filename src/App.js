@@ -1,29 +1,29 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Navbartop from "./Components/Navbartop";
+import MyNavbar from "./Components/MyNavbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Homepage from "./Pages/Homepage";
-import Articlepage from "./Pages/Articlepage";
-import Authorpage from "./Pages/Authorpage";
-import Userpage from "./Pages/Userpage";
-import Searchpage from "./Pages/Searchpage";
-import Categorypage from "./Pages/Categorypage";
-import Singlecategorypage from "./Pages/Singlecategorypage";
+import Home from "./Components/Home";
+import Articlepage from "./Components/Articlepage";
+import Authorpage from "./Components/Authorpage";
+import Userpage from "./Components/Userpage";
+import Searchpage from "./Components/Searchpage";
+import Categorypage from "./Components/Categorypage";
+import Singlecategory from "./Components/Singlecategory";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbartop />
+        <MyNavbar />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Home />} />
           <Route path="/article/:id" element={<Articlepage />} />
           <Route path="/allUsers" element={<Userpage />} />
           <Route path="/authorpage/:id" element={<Authorpage />} />
           <Route path="/search/:id" element={<Searchpage />} />
           <Route path="/category" element={<Categorypage />} />
-          <Route path="/singlecategory/:id" element={<Singlecategorypage />} />
+          <Route path="/singlecategory/:id" element={<Singlecategory />} />
         </Routes>
       </BrowserRouter>
     </>

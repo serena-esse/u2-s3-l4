@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-export default function Navbartop() {
+export default function MyNavbar() {
   const [search, setSearch] = useState("");
 
   const handleSearch = (e) => {
@@ -49,7 +49,7 @@ export default function Navbartop() {
               onChange={(e) => setSearch(e.target.value)}
             />
             <Button variant="outline-success" type="submit">
-              Cerca articolo
+              Search
             </Button>
           </Form>
         </Container>
